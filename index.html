@@ -5,118 +5,235 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lauren Parker | B2B Event Marketer</title>
 <meta name="description" content="B2B event marketer who builds the systems behind the stories: AI workflows for event ROI, lead quality and closing the loop.">
+<meta property="og:title" content="Lauren Parker | B2B Event Marketer">
+<meta property="og:description" content="I build the systems behind the stories. AI workflows for event ROI, lead quality and closing the loop.">
+<meta property="og:image" content="https://parker-lauren.github.io/og-image.jpg">
+<meta property="og:url" content="https://parker-lauren.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#faf8f4;--surface:#ffffff;--ink:#1d1b18;--muted:#625d55;--line:#e7e1d6;--accent:#b4532a;--accent-soft:#f6e7de;}
-@media (prefers-color-scheme:dark){:root{--bg:#161412;--surface:#1f1c19;--ink:#f1ece4;--muted:#a59e93;--line:#34302a;--accent:#e98a5d;--accent-soft:#3a2519;}}
+:root{
+  --charcoal:#2f2d2e; --charcoal-2:#3d3a3b; --charcoal-3:#4a4647;
+  --red:#c4121f; --red-deep:#9e0d18; --gold:#c9a25c; --gold-soft:#e6cf9f;
+  --cream:#f8f4ee; --paper:#fffdf9; --ink:#232122; --muted:#6a6264; --line:#e7ddd2; --blush:#f3e3d8;
+}
+@media (prefers-color-scheme:dark){:root{--cream:#1e1c1d;--paper:#262324;--ink:#f3eee8;--muted:#b3aaa6;--line:#3b3637;--blush:#3a2a26;}}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:880px;margin:0 auto;padding:0 20px}
-header{padding:88px 0 56px}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
-h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:clamp(38px,6vw,60px);line-height:1.05;margin:14px 0 18px;letter-spacing:-.01em}
-.lede{font-size:clamp(18px,2.3vw,21px);color:var(--muted);max-width:640px;margin:0}
-.lede strong{color:var(--ink);font-weight:600}
-.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--line);color:var(--ink);font-weight:500;font-size:15px;background:var(--surface)}
-.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.btn:hover{text-decoration:none;border-color:var(--accent)}
-section{padding:40px 0;border-top:1px solid var(--line)}
-h2{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:28px;margin:0 0 8px}
-.sub{color:var(--muted);margin:0 0 28px}
-.loop{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column}
-.stage{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);align-self:flex-start;padding:3px 10px;border-radius:999px}
-.card h3{font-size:19px;margin:14px 0 6px}
-.card p{margin:0 0 14px;color:var(--muted);font-size:15.5px}
-.card blockquote{margin:auto 0 14px;padding:10px 14px;border-left:3px solid var(--accent);background:var(--bg);font-size:14.5px;border-radius:0 8px 8px 0}
-.card a.more{font-weight:600;font-size:15px}
-.principles{list-style:none;padding:0;margin:0;display:grid;gap:14px}
-.principles li{display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:start}
-.principles .n{font-family:Fraunces,Georgia,serif;font-size:22px;color:var(--accent);line-height:1.2}
-.principles b{display:block}
-.principles span{color:var(--muted)}
-footer{padding:36px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
-@media (max-width:760px){.loop{grid-template-columns:1fr}header{padding:56px 0 40px}}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.65 Inter,system-ui,-apple-system,sans-serif}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+nav{position:absolute;inset:0 0 auto 0;z-index:3}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:600;letter-spacing:.01em}
+.mark span.lp{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);font:600 13px/1 Fraunces,Georgia,serif}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+nav ul a{color:#d9d3cf;text-decoration:none;font-size:15px}
+nav ul a:hover{color:#fff}
+
+.hero{background:radial-gradient(120% 90% at 75% 35%,var(--charcoal-3) 0%,var(--charcoal-2) 38%,var(--charcoal) 75%);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;align-items:end;gap:40px;min-height:640px;padding-top:110px}
+.hero-copy{padding-bottom:88px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:var(--gold)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(42px,6.2vw,76px);line-height:1.02;letter-spacing:-.015em;margin:18px 0 22px}
+h1 em{font-style:italic;font-weight:400;position:relative;white-space:nowrap;z-index:0}
+h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--red);z-index:-1;border-radius:2px}
+.lede{font-size:clamp(18px,2vw,20px);color:#d9d3cf;max-width:540px;margin:0}
+.lede b{color:#fff;font-weight:600}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
+.portrait{position:relative;align-self:end;justify-self:end;width:min(440px,100%)}
+.portrait img{position:relative;z-index:1;display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 22%,#000 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 24%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 22%,#000 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 24%);mask-composite:intersect}
+.portrait::before{content:"";position:absolute;top:6%;right:-8%;width:80%;aspect-ratio:1;border:1.5px solid var(--gold);border-radius:50%;opacity:.5}
+.hero-rule{height:6px;background:linear-gradient(90deg,var(--red) 0 62%,var(--gold) 62% 100%)}
+
+section{padding:96px 0}
+.kicker{color:var(--red);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,4vw,46px);line-height:1.1;margin:10px 0 14px;letter-spacing:-.01em}
+.intro{color:var(--muted);max-width:640px;margin:0 0 48px;font-size:18px}
+
+.flow{display:grid;grid-template-columns:repeat(4,1fr);margin:0 0 44px;padding:0;list-style:none;counter-reset:s}
+.flow li{position:relative;padding-top:26px;font-weight:600;font-size:15px}
+.flow li::before{content:"";position:absolute;top:10px;left:0;right:0;height:2px;background:var(--line)}
+.flow li::after{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;font:600 12px/22px Inter,sans-serif;text-align:center}
+.flow li span{display:block;font-weight:400;color:var(--muted);font-size:14px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 26px 22px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px -18px rgba(47,45,46,.45);border-color:var(--gold)}
+.tag{align-self:flex-start;font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);background:var(--blush);padding:4px 10px;border-radius:999px}
+.card h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:23px;margin:16px 0 8px;line-height:1.2}
+.card p{margin:0 0 18px;color:var(--muted);font-size:15.5px}
+.card q{display:block;margin:auto 0 18px;padding:12px 14px;border-left:3px solid var(--gold);background:var(--cream);border-radius:0 10px 10px 0;font:italic 400 15.5px/1.5 Fraunces,Georgia,serif;quotes:none}
+.card .go{font-weight:600;font-size:14.5px;color:var(--red)}
+.card .go::after{content:" →"}
+
+.principles{background:var(--charcoal);color:#fff}
+.principles .kicker{color:var(--gold)}
+.principles .intro{color:#bdb5b1}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.pgrid div{border-top:2px solid var(--red);padding-top:22px}
+.pgrid .n{font:italic 400 44px/1 Fraunces,Georgia,serif;color:var(--gold)}
+.pgrid h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;margin:14px 0 8px}
+.pgrid p{color:#cfc8c4;margin:0;font-size:16px}
+
+.contact{text-align:center}
+.contact h2{max-width:720px;margin:10px auto 14px}
+.contact .intro{margin:0 auto 32px}
+.contact .cta{justify-content:center}
+.contact .btn-ghost{border-color:var(--line);color:var(--ink)}
+.contact .btn-ghost:hover{border-color:var(--gold);color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  nav ul{display:none}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:96px;gap:8px}
+  .hero-copy{padding-bottom:12px}
+  .portrait{justify-self:center;width:min(340px,82%)}
+  .grid{grid-template-columns:1fr}
+  .flow{grid-template-columns:repeat(2,1fr);row-gap:22px}
+  .pgrid{grid-template-columns:1fr;gap:28px}
+  section{padding:72px 0}
+}
+@media (max-width:420px){.wrap{padding:0 16px}.btn{width:100%;justify-content:center}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="eyebrow">Lauren Parker · she/her</div>
-    <h1>I build the systems behind the stories.</h1>
-    <p class="lede">B2B marketer creating demand through <strong>authentic storytelling</strong> and fostering community through <strong>connected events</strong>, with AI workflows for event ROI, lead quality and closing the loop.</p>
-    <div class="links">
-      <a class="btn primary" href="https://github.com/parker-lauren">GitHub</a>
-      <a class="btn" href="https://www.linkedin.com/in/parkerlo/">LinkedIn</a>
-    </div>
-  </header>
 
-  <section>
-    <h2>The toolkit</h2>
-    <p class="sub">One loop, five tools: plan → decide → execute → learn. Built as Claude skills and shared as generic, made-up-data versions.</p>
-    <div class="loop">
-      <article class="card">
-        <span class="stage">Run the program</span>
+<nav>
+  <div class="wrap">
+    <a class="mark" href="#top"><span class="lp">LP</span>Lauren Parker</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="eyebrow">B2B Event Marketer · she/her</div>
+      <h1>I build the systems behind the <em>stories.</em></h1>
+      <p class="lede">I create demand through <b>authentic storytelling</b> and build community through <b>connected events</b>, then build the AI workflows that prove they work.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="#work">See the toolkit</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/parkerlo/">Connect on LinkedIn</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="lauren-parker.jpg" width="800" height="1000" alt="Portrait of Lauren Parker">
+    </div>
+  </div>
+  <div class="hero-rule"></div>
+</header>
+
+<main>
+<section id="work">
+  <div class="wrap">
+    <div class="kicker">The toolkit</div>
+    <h2>One event loop, five tools.</h2>
+    <p class="intro">Each is a Claude skill I use in my own work, shared here as a generic version with made-up data. Together they take an event from "should we?" to "what did we learn?"</p>
+
+    <ol class="flow">
+      <li>Plan<span>Run the program</span></li>
+      <li>Decide<span>Vet the spend</span></li>
+      <li>Execute<span>Enrich and clean leads</span></li>
+      <li>Learn<span>Debrief honestly</span></li>
+    </ol>
+
+    <div class="grid">
+      <a class="card" href="https://github.com/parker-lauren/event-program-os">
+        <span class="tag">Plan</span>
         <h3>Event Program OS</h3>
-        <p>One ID, one folder, one CRM campaign and ten gates per event. Status updates itself from linked evidence, and the tracker is kept deliberately lean.</p>
-        <blockquote>Nothing new goes into the tracker unless something comes out.</blockquote>
-        <a class="more" href="https://github.com/parker-lauren/event-program-os">See the project →</a>
-      </article>
-      <article class="card">
-        <span class="stage">Before</span>
+        <p>One ID, one folder, one CRM campaign and ten gates per event. Status updates itself from linked evidence.</p>
+        <q>Nothing new goes into the tracker unless something comes out.</q>
+        <span class="go">View project</span>
+      </a>
+      <a class="card" href="https://github.com/parker-lauren/event-vetting">
+        <span class="tag">Decide</span>
         <h3>Event Vetting</h3>
-        <p>Scores the room, counts real ICP prospects from the attendee list, and turns the price into a pipeline target, a meeting target and the close rate it implies.</p>
-        <blockquote>"This $41k sponsorship needs 16 pre-booked meetings."</blockquote>
-        <a class="more" href="https://github.com/parker-lauren/event-vetting">See the project →</a>
-      </article>
-      <article class="card">
-        <span class="stage">After</span>
+        <p>Scores the room, counts real ICP prospects, and turns a price into a pipeline target, a meeting target and the close rate it implies.</p>
+        <q>"This $41k sponsorship needs 16 pre-booked meetings."</q>
+        <span class="go">View project</span>
+      </a>
+      <a class="card" href="https://github.com/parker-lauren/webinar-lead-enrichment">
+        <span class="tag">Execute</span>
         <h3>Webinar Lead Enrichment</h3>
-        <p>Registrants → a ranked follow-up list. Finds the employer behind Gmail sign-ups, adds firmographics, and scores every lead against the ICP with a next action.</p>
-        <blockquote>The controller who registered with Gmail still makes Tier A.</blockquote>
-        <a class="more" href="https://github.com/parker-lauren/webinar-lead-enrichment">See the project →</a>
-      </article>
-      <article class="card">
-        <span class="stage">After</span>
+        <p>Registrants become a ranked follow-up list. It finds the employer behind Gmail sign-ups and scores every lead against the ICP.</p>
+        <q>The controller who registered with Gmail still makes Tier A.</q>
+        <span class="go">View project</span>
+      </a>
+      <a class="card" href="https://github.com/parker-lauren/event-contact-list">
+        <span class="tag">Execute</span>
         <h3>Event Contact List</h3>
-        <p>Raw badge scans → a deduped, enriched, CRM-ready CSV. Removes the do-not-contact list first, enriches only the gaps, and checks for leaks before handover.</p>
-        <blockquote>Never matches on phone alone. Never guesses a domain.</blockquote>
-        <a class="more" href="https://github.com/parker-lauren/event-contact-list">See the project →</a>
-      </article>
-      <article class="card">
-        <span class="stage">Close the loop</span>
+        <p>Raw badge scans become a deduped, enriched, CRM-ready CSV. The do-not-contact list comes out first, and the file is checked for leaks before handover.</p>
+        <q>Never matches on phone alone. Never guesses a domain.</q>
+        <span class="go">View project</span>
+      </a>
+      <a class="card" href="https://github.com/parker-lauren/event-debrief">
+        <span class="tag">Learn</span>
         <h3>Event Debrief</h3>
-        <p>A scheduled, fully sourced debrief draft three business days after every event. Every number has a source; every gap is a question; the outcome fields stay with people.</p>
-        <blockquote>"44 clicked join, 33 got in." A technical failure, not an interest one.</blockquote>
-        <a class="more" href="https://github.com/parker-lauren/event-debrief">See the project →</a>
-      </article>
-      <article class="card">
-        <span class="stage">Demand gen</span>
+        <p>A scheduled, fully sourced debrief draft three business days after every event. The outcome calls stay with people.</p>
+        <q>"44 clicked join, 33 got in." A technical failure, not an interest one.</q>
+        <span class="go">View project</span>
+      </a>
+      <a class="card" href="https://github.com/parker-lauren/campaign-brief-builder">
+        <span class="tag">Demand gen</span>
         <h3>Campaign Brief Builder</h3>
         <p>Evidence-tiered campaign briefs built over days, not one prompt. Every claim has a tier, a source and a cold-copy yes/no.</p>
-        <blockquote>An expert's hunch never quietly becomes cold-email copy.</blockquote>
-        <a class="more" href="https://github.com/parker-lauren/campaign-brief-builder">See the project →</a>
-      </article>
+        <q>An expert's hunch never quietly becomes cold-email copy.</q>
+        <span class="go">View project</span>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
+<section class="principles" id="approach">
+  <div class="wrap">
+    <div class="kicker">Approach</div>
     <h2>How I work</h2>
-    <p class="sub">The principles built into every tool.</p>
-    <ul class="principles">
-      <li><span class="n">1</span><div><b>Decide what an event must produce before buying it.</b><span>A meeting target is an instruction. A fit score is an opinion.</span></div></li>
-      <li><span class="n">2</span><div><b>Every number has a source.</b><span>If it isn't sourced, it's an open question, not an estimate.</span></div></li>
-      <li><span class="n">3</span><div><b>AI drafts, people decide.</b><span>The tools gather evidence and do the arithmetic; judgment and outcomes stay with the team.</span></div></li>
-    </ul>
-  </section>
+    <p class="intro">The same three rules are built into every tool, and into how I run events.</p>
+    <div class="pgrid">
+      <div><span class="n">01</span><h3>Decide before you buy.</h3><p>Write down what an event has to produce before signing. A meeting target is an instruction; a fit score is an opinion.</p></div>
+      <div><span class="n">02</span><h3>Every number has a source.</h3><p>If it isn't sourced, it's an open question, not an estimate. Honest gaps beat confident guesses.</p></div>
+      <div><span class="n">03</span><h3>AI drafts, people decide.</h3><p>The tools gather evidence and do the arithmetic. Judgment, relationships and outcomes stay with the team.</p></div>
+    </div>
+  </div>
+</section>
 
-  <footer>© 2026 Lauren Parker · All data in the linked repos is made up for illustration.</footer>
-</div>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker">Let's talk</div>
+    <h2>Building an event program that has to prove its worth?</h2>
+    <p class="intro">I'd love to compare notes on events, community and the systems behind them.</p>
+    <div class="cta">
+      <a class="btn btn-red" href="https://www.linkedin.com/in/parkerlo/">Connect on LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/parker-lauren">Browse GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Lauren Parker</span>
+    <span>Data in the linked projects is made up for illustration.</span>
+  </div>
+</footer>
 </body>
 </html>
