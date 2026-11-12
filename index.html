@@ -14,7 +14,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
   --charcoal:#2f2d2e; --charcoal-2:#3d3a3b; --charcoal-3:#4a4647;
@@ -31,7 +31,7 @@ a{color:inherit}
 nav{position:absolute;inset:0 0 auto 0;z-index:3}
 nav .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
 .mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:600;letter-spacing:.01em}
-.mark span.lp{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);font:600 13px/1 Fraunces,Georgia,serif}
+.mark span.lp{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);font:600 13px/1 "Inter Tight",Inter,system-ui,sans-serif}
 nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
 nav ul a{color:#d9d3cf;text-decoration:none;font-size:15px}
 nav ul a:hover{color:#fff}
@@ -41,8 +41,8 @@ nav ul a:hover{color:#fff}
 .hero-copy{padding-bottom:88px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
 .eyebrow::before{content:"";width:28px;height:1.5px;background:var(--gold)}
-h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(42px,6.2vw,76px);line-height:1.02;letter-spacing:-.015em;margin:18px 0 22px}
-h1 em{font-style:italic;font-weight:400;position:relative;white-space:nowrap;z-index:0}
+h1{font-family:"Inter Tight",Inter,system-ui,sans-serif;font-weight:700;font-size:clamp(42px,6.2vw,76px);line-height:1.02;letter-spacing:-.03em;margin:18px 0 22px}
+h1 em{font-style:italic;font-weight:600;position:relative;white-space:nowrap;z-index:0}
 h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--red);z-index:-1;border-radius:2px}
 .lede{font-size:clamp(18px,2vw,20px);color:#d9d3cf;max-width:540px;margin:0}
 .lede b{color:#fff;font-weight:600}
@@ -60,7 +60,7 @@ h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12
 
 section{padding:96px 0}
 .kicker{color:var(--red);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,4vw,46px);line-height:1.1;margin:10px 0 14px;letter-spacing:-.01em}
+h2{font-family:"Inter Tight",Inter,system-ui,sans-serif;font-weight:600;font-size:clamp(32px,4vw,46px);line-height:1.1;margin:10px 0 14px;letter-spacing:-.01em}
 .intro{color:var(--muted);max-width:640px;margin:0 0 48px;font-size:18px}
 
 .flow{display:grid;grid-template-columns:repeat(4,1fr);margin:0 0 44px;padding:0;list-style:none;counter-reset:s}
@@ -73,9 +73,9 @@ h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,4vw,4
 .card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 26px 22px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px -18px rgba(47,45,46,.45);border-color:var(--gold)}
 .tag{align-self:flex-start;font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);background:var(--blush);padding:4px 10px;border-radius:999px}
-.card h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:23px;margin:16px 0 8px;line-height:1.2}
+.card h3{font-family:"Inter Tight",Inter,system-ui,sans-serif;font-weight:600;font-size:23px;margin:16px 0 8px;line-height:1.2}
 .card p{margin:0 0 18px;color:var(--muted);font-size:15.5px}
-.card q{display:block;margin:auto 0 18px;padding:12px 14px;border-left:3px solid var(--gold);background:var(--cream);border-radius:0 10px 10px 0;font:italic 400 15.5px/1.5 Fraunces,Georgia,serif;quotes:none}
+.card q{display:block;margin:auto 0 18px;padding:12px 14px;border-left:3px solid var(--gold);background:var(--cream);border-radius:0 10px 10px 0;font:italic 400 15.5px/1.5 "Inter Tight",Inter,system-ui,sans-serif;quotes:none}
 .card .go{font-weight:600;font-size:14.5px;color:var(--red)}
 .card .go::after{content:" →"}
 
@@ -84,8 +84,8 @@ h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,4vw,4
 .principles .intro{color:#bdb5b1}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
 .pgrid div{border-top:2px solid var(--red);padding-top:22px}
-.pgrid .n{font:italic 400 44px/1 Fraunces,Georgia,serif;color:var(--gold)}
-.pgrid h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;margin:14px 0 8px}
+.pgrid .n{font:italic 400 44px/1 "Inter Tight",Inter,system-ui,sans-serif;color:var(--gold)}
+.pgrid h3{font-family:"Inter Tight",Inter,system-ui,sans-serif;font-weight:600;font-size:22px;margin:14px 0 8px}
 .pgrid p{color:#cfc8c4;margin:0;font-size:16px}
 
 .contact{text-align:center}
@@ -103,13 +103,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .offer{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px 26px;display:flex;flex-direction:column}
 .offer.first{border:2px solid var(--red)}
 .offer .tag{margin-bottom:14px}
-.offer h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;margin:0 0 8px;line-height:1.2}
+.offer h3{font-family:"Inter Tight",Inter,system-ui,sans-serif;font-weight:600;font-size:24px;margin:0 0 8px;line-height:1.2}
 .offer p{margin:0 0 20px;color:var(--muted);font-size:15.5px}
 .offer .terms{margin-top:auto;font-weight:600;font-size:15px;color:var(--ink)}
 .passthrough{margin:22px 0 0;color:var(--muted);font-size:15px}
 .example{margin:40px 0 0;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 18px 18px 0;padding:24px 28px}
 .example .kicker{color:var(--gold);margin-bottom:6px}
-.example p{margin:0;font:400 19px/1.55 Fraunces,Georgia,serif}
+.example p{margin:0;font:400 19px/1.55 "Inter Tight",Inter,system-ui,sans-serif}
 .card.feature{grid-column:span 2;border-color:var(--gold)}
 .card.feature h3{font-size:28px}
 @media (max-width:900px){
