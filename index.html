@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lauren Parker | B2B Event Marketer</title>
-<meta name="description" content="B2B event marketer who builds the systems behind the stories: AI workflows for event ROI, lead quality and closing the loop.">
-<meta property="og:title" content="Lauren Parker | B2B Event Marketer">
-<meta property="og:description" content="I build the systems behind the stories. AI workflows for event ROI, lead quality and closing the loop.">
-<meta property="og:image" content="https://parker-lauren.github.io/og-image.jpg">
-<meta property="og:url" content="https://parker-lauren.github.io/">
+<title>Swansee | Know if an event pays off before you sign</title>
+<meta name="description" content="Swansee helps B2B marketing teams decide which events are worth the spend before they sign, then runs the ones that make pipeline.">
+<meta property="og:title" content="Swansee | Know if an event pays off before you sign">
+<meta property="og:description" content="Count the real buyers on the attendee list and set the meeting target a sponsorship needs, before you sign.">
+<meta property="og:image" content="https://swansee.co/og-image.jpg">
+<meta property="og:url" content="https://swansee.co/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -97,7 +97,24 @@ h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,4vw,4
 footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
+.wordmark{font:700 24px/1 Inter,system-ui,sans-serif;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.wordmark i{font-style:normal;color:var(--red)}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.offer{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px 26px;display:flex;flex-direction:column}
+.offer.first{border:2px solid var(--red)}
+.offer .tag{margin-bottom:14px}
+.offer h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;margin:0 0 8px;line-height:1.2}
+.offer p{margin:0 0 20px;color:var(--muted);font-size:15.5px}
+.offer .terms{margin-top:auto;font-weight:600;font-size:15px;color:var(--ink)}
+.passthrough{margin:22px 0 0;color:var(--muted);font-size:15px}
+.example{margin:40px 0 0;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 18px 18px 0;padding:24px 28px}
+.example .kicker{color:var(--gold);margin-bottom:6px}
+.example p{margin:0;font:400 19px/1.55 Fraunces,Georgia,serif}
+.card.feature{grid-column:span 2;border-color:var(--gold)}
+.card.feature h3{font-size:28px}
 @media (max-width:900px){
+  .offers{grid-template-columns:1fr}
+  .card.feature{grid-column:auto}
   nav ul{display:none}
   .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:96px;gap:8px}
   .hero-copy{padding-bottom:12px}
@@ -115,9 +132,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <nav>
   <div class="wrap">
-    <a class="mark" href="#top"><span class="lp">LP</span>Lauren Parker</a>
+    <a class="wordmark" href="#top" aria-label="Swansee home">swansee<i>.</i></a>
     <ul>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#offers">Work with me</a></li>
+      <li><a href="#work">Toolkit</a></li>
       <li><a href="#approach">Approach</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -127,12 +145,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <header class="hero" id="top">
   <div class="wrap">
     <div class="hero-copy">
-      <div class="eyebrow">B2B Event Marketer · she/her</div>
-      <h1>I build the systems behind the <em>stories.</em></h1>
-      <p class="lede">I create demand through <b>authentic storytelling</b> and build community through <b>connected events</b>, then build the AI workflows that prove they work.</p>
+      <div class="eyebrow">Demand gen &amp; field events</div>
+      <h1>Know if an event pays off <em>before</em> you sign.</h1>
+      <p class="lede">I'm Lauren Parker. I help B2B marketing teams <b>count the real buyers</b> on an attendee list, set the <b>meeting target</b> a sponsorship needs, and run the events that make pipeline.</p>
       <div class="cta">
-        <a class="btn btn-red" href="#work">See the toolkit</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/parkerlo/">Connect on LinkedIn</a>
+        <a class="btn btn-red" href="https://calendar.app.google/nLzymJUkp6739MEq8">Book a call</a>
+        <a class="btn btn-ghost" href="#offers">How I work with teams</a>
       </div>
     </div>
     <div class="portrait">
@@ -143,11 +161,44 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </header>
 
 <main>
+<section id="offers">
+  <div class="wrap">
+    <div class="kicker">Work with me</div>
+    <h2>Most teams start with one event.</h2>
+    <p class="intro">I work with a small number of B2B teams at a time. Start small, and only go further if the first answer is useful.</p>
+    <div class="offers">
+      <div class="offer first">
+        <span class="tag">Where most teams start</span>
+        <h3>Room check</h3>
+        <p>Send me the attendee list for one event you're weighing. I'll tell you how many real prospects are in the room, what each one costs, and how many meetings it takes to pay off.</p>
+        <span class="terms">A few days, one event</span>
+      </div>
+      <div class="offer">
+        <span class="tag">Plan</span>
+        <h3>Event plan</h3>
+        <p>A review of last year's events, every option for next year scored against your buyers, and a calendar with a clear reason for each event you keep.</p>
+        <span class="terms">Fixed fee, 4 to 5 weeks</span>
+      </div>
+      <div class="offer">
+        <span class="tag">Run</span>
+        <h3>Fractional event lead</h3>
+        <p>I run the program with your team: vetting, sales prep, target lists, outreach, debriefs, and a quarterly report your CFO can read.</p>
+        <span class="terms">Monthly retainer, 6+ months</span>
+      </div>
+    </div>
+    <p class="passthrough">Sponsorship fees, travel and swag pass through at cost. I never mark them up.</p>
+    <div class="example">
+      <div class="kicker">A recent call</div>
+      <p>A client was about to sign a £17,700 sponsorship. Every delegate was an active buyer, but mostly the wrong kind. It needed 9 to 10 meetings to pay off, so I told them to hold until the organizer proved the right buyers would be there.</p>
+    </div>
+  </div>
+</section>
+
 <section id="work">
   <div class="wrap">
     <div class="kicker">The toolkit</div>
-    <h2>One event loop, five tools.</h2>
-    <p class="intro">Each is a Claude skill I use in my own work, shared here as a generic version with made-up data. Together they take an event from "should we?" to "what did we learn?"</p>
+    <h2>The tools behind the work.</h2>
+    <p class="intro">Each is a Claude skill I use in client work, shared here as a generic version with made-up data. Together they take an event from "should we?" to "what did we learn?"</p>
 
     <ol class="flow">
       <li>Plan<span>Run the program</span></li>
@@ -157,18 +208,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </ol>
 
     <div class="grid">
+      <a class="card feature" href="https://github.com/parker-lauren/event-vetting">
+        <span class="tag">Decide</span>
+        <h3>Event Vetting</h3>
+        <p>The engine behind the room check. Scores the room, counts real ICP prospects, and turns a price into a pipeline target, a meeting target and the close rate it implies.</p>
+        <q>"Example: this $41k sponsorship needs 16 pre-booked meetings."</q>
+        <span class="go">View project</span>
+      </a>
       <a class="card" href="https://github.com/parker-lauren/event-program-os">
         <span class="tag">Plan</span>
         <h3>Event Program OS</h3>
         <p>One ID, one folder, one CRM campaign and ten gates per event. Status updates itself from linked evidence.</p>
         <q>Nothing new goes into the tracker unless something comes out.</q>
-        <span class="go">View project</span>
-      </a>
-      <a class="card" href="https://github.com/parker-lauren/event-vetting">
-        <span class="tag">Decide</span>
-        <h3>Event Vetting</h3>
-        <p>Scores the room, counts real ICP prospects, and turns a price into a pipeline target, a meeting target and the close rate it implies.</p>
-        <q>"This $41k sponsorship needs 16 pre-booked meetings."</q>
         <span class="go">View project</span>
       </a>
       <a class="card" href="https://github.com/parker-lauren/webinar-lead-enrichment">
@@ -192,13 +243,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <q>"44 clicked join, 33 got in." A technical failure, not an interest one.</q>
         <span class="go">View project</span>
       </a>
-      <a class="card" href="https://github.com/parker-lauren/campaign-brief-builder">
-        <span class="tag">Demand gen</span>
-        <h3>Campaign Brief Builder</h3>
-        <p>Evidence-tiered campaign briefs built over days, not one prompt. Every claim has a tier, a source and a cold-copy yes/no.</p>
-        <q>An expert's hunch never quietly becomes cold-email copy.</q>
-        <span class="go">View project</span>
-      </a>
     </div>
   </div>
 </section>
@@ -219,11 +263,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <section class="contact" id="contact">
   <div class="wrap">
     <div class="kicker">Let's talk</div>
-    <h2>Building an event program that has to prove its worth?</h2>
-    <p class="intro">I'd love to compare notes on events, community and the systems behind them.</p>
+    <h2>Is there an event on your 2027 list you're on the fence about?</h2>
+    <p class="intro">Send me the name and what it costs. I'll tell you if the room is worth it.</p>
     <div class="cta">
-      <a class="btn btn-red" href="https://www.linkedin.com/in/parkerlo/">Connect on LinkedIn</a>
-      <a class="btn btn-ghost" href="https://github.com/parker-lauren">Browse GitHub</a>
+      <a class="btn btn-red" href="mailto:lauren@swansee.co?subject=An%20event%20I%27m%20on%20the%20fence%20about">Email lauren@swansee.co</a>
+      <a class="btn btn-ghost" href="https://calendar.app.google/nLzymJUkp6739MEq8">Book a call</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/parkerlo/">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -231,7 +276,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Lauren Parker</span>
+    <span>© 2026 Swansee · Lauren Parker</span>
     <span>Data in the linked projects is made up for illustration.</span>
   </div>
 </footer>
